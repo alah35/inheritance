@@ -2,12 +2,20 @@
 #include <cmath>
 #include "../include/circle.h"
 
-Circle::Circle(double inRadius = 3, Color inColor = RED, 
-        int inX = 0, int inY = 0) {
+Circle::Circle(double inRadius, Color inColor, 
+        int inX, int inY) {
     radius = inRadius;
     x = inX;
     y = inY;
     color = inColor;
+}
+
+double Circle::get_radius() {
+    return radius;
+}
+
+void Circle::set_radius(double inRadius) {
+    radius = inRadius;
 }
 
 void Circle::show_info() {
@@ -17,7 +25,7 @@ void Circle::show_info() {
 }
 
 double Circle::area() {
-    return std::atan(1) * 4 * radius;
+    return std::atan(1) * 4 * radius *radius;
 }
 
 Rectangle Circle::circumscribing_rectangle() {

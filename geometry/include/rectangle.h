@@ -8,9 +8,13 @@ class Rectangle: public Figure {
         double length;
 
     public:
-        Rectangle(double inWidth, double inLength, Color inColor,
-                int inX, int inY);
+        Rectangle(double inWidth = 5, double inLength = 10, Color inColor = PURPLE,
+                int inX = 0, int inY = 0);
+        double get_width();
+        void set_width(double inWidth);
+        double get_length();
+        void set_length(double inLength);
         void show_info();
-        virtual double area();
+        double area();
         Rectangle *circumscribing_rectangl();
 };

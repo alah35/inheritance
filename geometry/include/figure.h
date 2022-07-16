@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 
 enum Color {
     NONE = 0,
@@ -16,9 +17,10 @@ class Figure {
     Color color;
 
     public:
-    virtual double area() = 0;
-    Color get_color();
-    void set_color(Color inColor);
+    std::string get_color();
+    Color get_color(std::string inColor);
+    virtual double area();
+    void set_color(std::string inColor);
     int get_x();
     void set_x(int inX);
     int get_y();

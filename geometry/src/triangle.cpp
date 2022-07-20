@@ -29,7 +29,7 @@ double Triangle::area() {
 }
 
 Rectangle Triangle::circumscribing_rectangle() {
-    Rectangle rect( (sqrt(3)/2) * edge, edge, color, x, (y + sqrt(3) / 12 * edge));
+    Rectangle rect( (sqrt(3)/2) * edge, edge, color, x, y); 
     return rect;
 }
 

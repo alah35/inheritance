@@ -26,6 +26,7 @@ Color Figure::get_color(std::string inColor) {
         return PURPLE;
     return NONE;
 }
+
 double Figure::area() {
     std::cerr << "You called parent's implementation" << std::endl;
     return 0;

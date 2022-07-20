@@ -9,17 +9,17 @@ enum Color {
     PURPLE
 };
 
-class Figure {
+class Figure { //abstract class for geometry figures 
 
-    protected:
+    protected: //common members for all figures
     int x;
     int y;
     Color color;
 
-    public:
+    public: // common methods
     std::string get_color();
-    Color get_color(std::string inColor);
-    virtual double area();
+    Color get_color(std::string inColor); // transform string inColor to Color type;
+    virtual double area(); // virtual method which implements in child classes
     void set_color(std::string inColor);
     int get_x();
     void set_x(int inX);

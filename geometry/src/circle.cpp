@@ -21,7 +21,7 @@ void Circle::set_radius(double inRadius) {
 void Circle::show_info() {
     std::cout << "Circle:" << std::endl << "R = " 
         << radius << std::endl;
-    Figure::show_info();
+    Figure::show_info(); // it uses parent's implementation
 }
 
 double Circle::area() {
@@ -29,7 +29,7 @@ double Circle::area() {
 }
 
 Rectangle Circle::circumscribing_rectangle() {
-    Rectangle rect(radius, radius, color, x, y);
+    Rectangle rect(radius, radius, color, x, y); 
     return rect;
 }
 

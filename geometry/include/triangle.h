@@ -8,10 +8,10 @@ class Triangle: public Figure {
     double edge;
 
     public:
-    Triangle(double inEdge = 3, Color inColor = BLUE, int inX = 0, int inY = 0);
+    Triangle(double inEdge = 3, Color inColor = BLUE, int inX = 0, int inY = 0); // default constructor 
     double get_edge();
     void set_edge(double inEdge);
     void show_info();
-    double area();
+    double area(); //own realization
     Rectangle circumscribing_rectangle();
 };

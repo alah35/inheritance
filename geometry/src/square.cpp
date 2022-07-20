@@ -29,7 +29,7 @@ double Square::area() {
 }
 
 Rectangle Square::circumscribing_rectangl() {
-    Rectangle rect = *this;
+    Rectangle rect = *this; // rect takes square's parameters
     return rect;
 }
 

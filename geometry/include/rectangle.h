@@ -8,7 +8,7 @@ class Rectangle: public Figure {
         double length;
 
     public:
-        Rectangle(double inWidth = 5, double inLength = 10, Color inColor = PURPLE,
+        Rectangle(double inWidth = 5, double inLength = 10, Color inColor = PURPLE, // defalut contructor
                 int inX = 0, int inY = 0);
         double get_width();
         void set_width(double inWidth);
@@ -16,5 +16,5 @@ class Rectangle: public Figure {
         void set_length(double inLength);
         void show_info();
         double area();
-        Rectangle *circumscribing_rectangl();
+        Rectangle *circumscribing_rectangl(); //return the pointer on himself
 };

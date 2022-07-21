@@ -18,7 +18,7 @@ class Figure { //abstract class for geometry figures
 
     public: // common methods
     std::string get_color();
-    Color get_color(std::string inColor); // transform string inColor to Color type;
+    Color get_color(std::string inColor); // transform string to Color type;
     virtual double area(); // virtual method which implements in child classes
     void set_color(std::string inColor);
     int get_x();

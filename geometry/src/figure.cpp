@@ -28,7 +28,7 @@ Color Figure::get_color(std::string inColor) {
 }
 
 double Figure::area() {
-    std::cerr << "You called parent's implementation" << std::endl;
+    std::cerr << "You called parent's implementation" << std::endl; //just in case
     return 0;
 }
 
@@ -41,23 +41,15 @@ void Figure::set_color(std::string inColor) {
         color = BLUE;
     if (inColor == "purple" || inColor == "Purple")
         color = PURPLE;
-    }
-
-int Figure::get_x() {
-    return x;
 }
 
-void Figure::set_x(int inX) {
-    x = inX;
-}
+int Figure::get_x() { return x; }
 
-int Figure::get_y() {
-    return y;
-}
+void Figure::set_x(int inX) { x = inX; }
 
-void Figure::set_y(int inY) {
-    y = inY;
-}
+int Figure::get_y() { return y; }
+
+void Figure::set_y(int inY) { y = inY; }
 
 void Figure::show_info() {
     std::cout << "Color: " << get_color() << std::endl << "Center: "

@@ -10,23 +10,17 @@ Circle::Circle(double inRadius, Color inColor,
     color = inColor;
 }
 
-double Circle::get_radius() {
-    return radius;
-}
+double Circle::get_radius() { return radius; }
 
-void Circle::set_radius(double inRadius) {
-    radius = inRadius;
-}
+void Circle::set_radius(double inRadius) { radius = inRadius; }
 
-void Circle::show_info() {
+void Circle::show_info() { // reimplementation
     std::cout << "Circle:" << std::endl << "R = " 
         << radius << std::endl;
     Figure::show_info(); // it uses parent's implementation
 }
 
-double Circle::area() {
-    return std::atan(1) * 4 * radius *radius;
-}
+double Circle::area() { return std::atan(1) * 4 * radius *radius; }
 
 Rectangle Circle::circumscribing_rectangle() {
     Rectangle rect(radius, radius, color, x, y); 

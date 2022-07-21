@@ -3,20 +3,15 @@
 
 Square::Square(double inEdge, Color inColor, 
         int inX, int inY) {
-    width = inEdge;
-    length = inEdge;
+    width = length = inEdge;
     color = inColor;
     x = inX;
     y = inY;
 }
 
-double Square::get_edge() {
-    return width;
-}
+double Square::get_edge() { return width; }
 
-void Square::set_edge(double inEdge) {
-    width = length = inEdge;
-}
+void Square::set_edge(double inEdge) { width = length = inEdge; }
 
 void Square::show_info() {
     std::cout << "Square:" << std::endl << "Edge = " 
@@ -24,11 +19,9 @@ void Square::show_info() {
     Figure::show_info();
 }
 
-double Square::area() {
-    return Rectangle::area();
-}
+double Square::area() { return Rectangle::area(); }
 
-Rectangle Square::circumscribing_rectangl() {
+Rectangle Square::circumscribing_rectangle() {
     Rectangle rect = *this; // rect takes square's parameters
     return rect;
 }

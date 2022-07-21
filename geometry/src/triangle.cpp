@@ -10,13 +10,9 @@ Triangle::Triangle(double inEdge, Color inColor,
     y = inY;
 }
 
-double Triangle::get_edge() {
-    return edge;
-}
+double Triangle::get_edge() { return edge; }
 
-void Triangle::set_edge(double inEdge) {
-    edge = inEdge;
-}
+void Triangle::set_edge(double inEdge) { edge = inEdge; }
 
 void Triangle::show_info() {
     std::cout << "Triangle:" << std::endl << "Edge = " 
@@ -24,12 +20,10 @@ void Triangle::show_info() {
     Figure::show_info();
 }
 
-double Triangle::area() {
-    return edge * edge * std::sqrt(3) / 4;
-}
+double Triangle::area() { return edge * edge * std::sqrt(3) / 4; }
 
 Rectangle Triangle::circumscribing_rectangle() {
-    Rectangle rect( (sqrt(3)/2) * edge, edge, color, x, y); 
+    Rectangle rect( (sqrt(3)/2) * edge, edge, color, x, y);
     return rect;
 }
 

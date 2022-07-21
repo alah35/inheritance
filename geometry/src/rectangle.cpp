@@ -10,21 +10,13 @@ Rectangle::Rectangle(double inWidth, double inLength,
     y = inY;
 }
 
-double Rectangle::get_width() {
-    return width;
-}
+double Rectangle::get_width() { return width; }
 
-void Rectangle::set_width(double inWidth) {
-    width = inWidth;
-}
+void Rectangle::set_width(double inWidth) { width = inWidth; }
 
-double Rectangle::get_length() {
-    return length;
-}
+double Rectangle::get_length() { return length; }
 
-void Rectangle::set_length(double inLength) {
-    length = inLength;
-}
+void Rectangle::set_length(double inLength) { length = inLength; }
 
 void Rectangle::show_info() {
     std::cout << "Rectangle:" << std::endl << "Width = "<< width 
@@ -32,10 +24,6 @@ void Rectangle::show_info() {
     Figure::show_info();
 }
 
-double Rectangle::area() {
-    return width * length;
-}
+double Rectangle::area() { return width * length; }
 
-Rectangle *Rectangle::circumscribing_rectangl() {
-    return this;
-}
+Rectangle *Rectangle::circumscribing_rectangle() { return this; }
